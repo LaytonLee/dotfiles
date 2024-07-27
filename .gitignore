@@ -1,0 +1,11 @@
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+### MacOS ###
+**/.DS_Store
+
+### VS Code ###
+.vscode
