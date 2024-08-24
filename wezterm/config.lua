@@ -18,7 +18,6 @@ function M:append(options)
 		self.options[k] = v
 	end
 
-	print(self.options)
 	return self
 end
 

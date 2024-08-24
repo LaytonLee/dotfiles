@@ -13,7 +13,6 @@ function M:init()
 	appearance:set_gpu_options(appearance:get_gpu_options())
 	appearance:set_alt_options()
 
-	print(appearance)
 	return appearance
 end
 

@@ -7,10 +7,6 @@ M.CYCLE_TIME = 30
 
 math.randomseed(os.time())
 
-function M:hi()
-	print("hello wezterm")
-end
-
 function M:init()
 	local handler = {
 		idx = 0,
@@ -42,18 +38,6 @@ function M:set_random()
 		self.idx = math.random(#self.files)
 		wezterm.GLOBAL.background = self.files[self.idx]
 	end
-end
-
-function M:change_background(idx, files)
-	if idx < 1 or idx > #files then
-		return
-	end
-
-	idx = idx + 1
-	wezterm.GLOBAL.background = files[idx]
-	print("current idx: " .. idx)
-
-	return idx
 end
 
 return M
