@@ -14,4 +14,4 @@ Host github.com
 # 	IdentityFile ~/.ssh/id_rsa_example
 # 	ServerAliveInterval 60
 # 	ServerAliveCountMax 3
-# 	ProxyCommand nc -X -5 -x 127.0.0.1:10800 %h %p
+# 	ProxyCommand nc -X 5 -x 127.0.0.1:10800 %h %p
