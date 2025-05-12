@@ -1,0 +1,17 @@
+Host github.com
+    HostName ssh.github.com
+    user LaytonLee
+    port 443
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_github
+
+# ssh example.com
+# Host example.com
+# 	HostName 1.2.3.4
+# 	user layton
+# 	port 2222
+# 	PreferredAuthentications publickey
+# 	IdentityFile ~/.ssh/id_rsa_example
+# 	ServerAliveInterval 60
+# 	ServerAliveCountMax 3
+# 	ProxyCommand nc -X -5 -x 127.0.0.1:10800 %h %p
