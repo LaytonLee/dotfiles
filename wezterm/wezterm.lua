@@ -4,4 +4,6 @@ local config = require("config")
 require("utils.backdrop"):init():set_files():set_random()
 
 return config:init()
-	:append(require("appearance"):init()).options
+	:append(require("appearance"):init())
+	:append(require("keymap"):init())
+	.options
