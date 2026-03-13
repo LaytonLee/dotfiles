@@ -52,7 +52,7 @@ function M:set_background()
 				File = wezterm.GLOBAL.background,
 			},
 			hsb = {
-				brightness = 0.5,
+				brightness = 0.8,
 				hue = 1.0,
 				saturation = 1.0,
 			},
