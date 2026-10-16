@@ -8,6 +8,12 @@ alias tor="/usr/bin/open -a '/Applications/Tor Browser.app'"
 [ -f /Applications/JD-GUI.app ] && alias jdgui="java -jar /Applications/JD-GUI.app/Contents/Resources/Java/jd-gui-1.6.6-min.jar"
 
 # kitty
-if [ "$TERM" = "xterm-kitty" ]; then
-    alias ssh="kitten ssh"
+if [[ $TERM == "xterm-kitty" ]]; then
+  unalias ssh 2>/dev/null
+
+  ssh() {
+    kitty +kitten ssh "$@"
+  }
+
+  compdef ssh=ssh
 fi
